@@ -2,6 +2,8 @@
 
 Markdown-driven static site.
 
+Borrowed heavily from [lineman-docs](https://github.com/linemanjs/lineman-docs).
+
 ## LICENSE
 
 The MIT License (MIT)
