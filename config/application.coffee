@@ -18,6 +18,11 @@ module.exports = lineman.config.extend "application",
       lib:
         Category: require('../lib/category')
 
+  sass:
+    options:
+      bundleExec: true
+  enableSass: true
+
   htmlhint:
     files:
       src: "generated/*.html"
