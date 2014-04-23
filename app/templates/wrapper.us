@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<% site.categories = [
+  "Languages",
+  "Process"
+]
+.map(function(categoryTitle){
+  return new site.lib.Category(site, categoryTitle)
+});
+%><!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
@@ -8,7 +15,15 @@
     <header>
       <h1><%= site.title %></h1>
       <nav>
-        <a href="/">home</a>
+      <a href="/">home</a>
+      <% site.categories.forEach(function(category){ %>
+      <a href="#<%- category.slug %>"><%- category.title %></a>
+      <ul>
+        <% category.pages.forEach(function(page){ %>
+        <li>- <a href="/<%- page.get('slug') %>.html"><%- page.title() %></a></li>
+        <% }); %>
+      </ul>
+      <% }); %>
       </nav>
     </header>
 

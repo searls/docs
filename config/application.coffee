@@ -13,8 +13,10 @@ module.exports = lineman.config.extend "application",
       paths:
         archive: null
         rss: null
-      #lib:
-      #  Category: require('../lib/category')
+      pathRoots:
+        posts: null
+      lib:
+        Category: require('../lib/category')
 
   htmlhint:
     files:
