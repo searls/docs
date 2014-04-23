@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "homepage": "http://help.exercism.io",
+  "author": "Katrina Owen",
+  "email": "kytrinyx@exercism.io",
   "repository": {
     "type": "git",
     "url": "git://github.com/exercism/docs.git"

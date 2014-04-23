@@ -1,0 +1,43 @@
+.main,
+.footer {
+  -webkit-transition: margin-left 150ms ease;
+  transition: margin-left 150ms ease;
+  margin-left: 0;
+}
+
+nav {
+  background-color: $white;
+  height: 4.5em;
+  left: 16.25em;
+  right: 0em;
+  z-index: 10;
+}
+
+.masthead {
+  background-color: $berry;
+  height: 15em;
+}
+
+.mast-contents {
+  padding: 35px 0 0 15%;
+}
+
+.mast-logo {
+  vertical-align: middle;
+}
+
+.article-block {
+  padding: 20px;
+  border-bottom: 1px solid $border-grey;
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+  article:last-child {
+    border-bottom: 0px
+  }
+
+.article-contents {
+  padding: 15px 0 20px 16%;
+}

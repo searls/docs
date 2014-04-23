@@ -13,24 +13,35 @@
   </head>
   <body>
     <header>
-      <h1><%= site.title %></h1>
       <nav>
       <a href="/">home</a>
-      <% site.categories.forEach(function(category){ %>
-      <a href="#<%- category.slug %>"><%- category.title %></a>
-      <ul>
-        <% category.pages.forEach(function(page){ %>
-        <li>- <a href="/<%- page.get('slug') %>.html"><%- page.title() %></a></li>
-        <% }); %>
-      </ul>
-      <% }); %>
       </nav>
     </header>
 
-    <%= yield %>
+    <section class="main">
+      <section class="masthead">
+        <div class="mast-contents">
+          <img class="mast-logo" src="/img/logo.svg">
+          <span class="headline">Help</span>
+        </div>
+      </section>
+    </section>
+
+    <article class="article-block">
+      <%= yield %>
+    </article>
 
     <footer>
-      Copyright <%= site.author %>, <%= new Date().getFullYear() %>.
+      <img class="url-logo" src="/img/logo-url.svg">
+      <div class="details-container">
+        <p>&copy; <%= new Date().getFullYear()%> <%= site.author %></p>
+        <p>Report bugs and submit feedback on
+           <a href="http://github.com/exercism/exercism.io/issues" target="_blank">GitHub</a>.
+        </p>
+        <p>Email me at
+           <a href="mailto:<%= site.email %>"><%= site.email %></a>.
+        </p>
+      </div>
     </footer>
     <script type="text/javascript" src="<%= js %>"></script>
   </body>

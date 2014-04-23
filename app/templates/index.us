@@ -1,1 +1,8 @@
-<p>This is the index page.</p>
+<% site.categories.forEach(function(category){ %>
+<h2><%- category.title %></h2>
+<ul>
+  <% category.pages.forEach(function(page){ %>
+  <li>- <a href="/<%- page.get('slug') %>.html"><%- page.title() %></a></li>
+  <% }); %>
+</ul>
+<% }); %>
