@@ -1,6 +1,7 @@
 <% site.categories = [
   "Languages",
-  "Process"
+  "Process",
+  "Topics"
 ]
 .map(function(categoryTitle){
   return new site.lib.Category(site, categoryTitle)
