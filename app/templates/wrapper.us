@@ -14,7 +14,7 @@
   <body>
     <header>
       <nav>
-      <a href="/">home</a>
+        <a href="/">home</a>
       </nav>
     </header>
 
@@ -28,13 +28,15 @@
     </section>
 
     <article class="article-block">
-      <%= yield %>
+      <div class="article-contents">
+        <%= yield %>
+      </div>
     </article>
 
     <footer>
       <img class="url-logo" src="/img/logo-url.svg">
       <div class="details-container">
-        <p>&copy; <%= new Date().getFullYear()%> <%= site.author %></p>
+        <p>&copy; <%= new Date().getFullYear()%> <%= site.author %></p>.
         <p>Report bugs and submit feedback on
            <a href="http://github.com/exercism/exercism.io/issues" target="_blank">GitHub</a>.
         </p>
