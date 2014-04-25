@@ -6,10 +6,11 @@ module.exports = lineman.config.extend "application",
 
   markdown:
     options:
-      author: "Exercism"
+      author: "Katrina Owen"
       title: "Exercism Help"
       description: "End-user documentation for Exercism.io"
       url: "<%= pkg.homepage %>"
+      email: "kytrinyx@exercism.io"
       paths:
         archive: null
         rss: null
