@@ -15,14 +15,14 @@
   <body>
     <header>
       <nav>
-        <a href="/">home</a>
+        <a href="http://exercism.io">exercism.io</a>
       </nav>
     </header>
 
     <section class="main">
       <section class="masthead">
         <div class="mast-contents">
-          <img class="mast-logo" src="/img/logo.svg">
+          <a href="/"><img class="mast-logo" src="/img/logo.svg"></a>
           <span class="headline">Help</span>
         </div>
       </section>
