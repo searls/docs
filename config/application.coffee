@@ -14,6 +14,13 @@ module.exports = lineman.config.extend "application",
       paths:
         archive: null
         rss: null
+      layouts:
+        post: null
+        archive: null
+      paths:
+        posts: null
+        archive: null
+        rss: null
       pathRoots:
         posts: null
       lib:
