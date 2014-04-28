@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "lineman": "~0.29.0",
-    "lineman-blog": "git://github.com/linemanjs/lineman-blog.git#postinstall-stuffs",
+    "lineman-blog": "git://github.com/linemanjs/lineman-blog.git#master",
     "grunt-html-validation": "~0.1.13",
     "grunt-htmlhint": "~0.4.0",
     "underscore.string": "~2.3.3"
