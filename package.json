@@ -2,6 +2,9 @@
   "name": "exercism-docs",
   "description": "End-user documentation for exercism.io",
   "version": "0.0.1",
+  "engines": {
+    "node": "0.10.26"
+  },
   "private": true,
   "homepage": "http://help.exercism.io",
   "author": "Katrina Owen",
