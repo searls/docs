@@ -3,7 +3,7 @@
   "description": "End-user documentation for exercism.io",
   "version": "0.0.1",
   "engines": {
-    "node": "0.10.26"
+    "node": "0.10.21"
   },
   "private": true,
   "homepage": "http://help.exercism.io",
