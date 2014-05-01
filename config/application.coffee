@@ -11,9 +11,6 @@ module.exports = lineman.config.extend "application",
       description: "End-user documentation for Exercism.io"
       url: "<%= pkg.homepage %>"
       email: "kytrinyx@exercism.io"
-      paths:
-        archive: null
-        rss: null
       layouts:
         post: null
         archive: null
